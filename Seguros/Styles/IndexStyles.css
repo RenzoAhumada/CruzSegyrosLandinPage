@@ -1,0 +1,359 @@
+/* Estilos globales */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Estilos nab var */
+li {
+  list-style: none;
+}
+
+header {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #000000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  font-size: x-large;
+
+}
+
+nav a {
+  color: #1b305d;
+  text-decoration: none;
+}
+
+
+.nav-img img {
+  width: 150px;
+  height: auto;
+  text-align: left;
+}
+
+
+.left-ul {
+  margin-right: auto;
+}
+
+
+.right-ul {
+  margin-left: auto;
+}
+
+
+.right-ul ul {
+  justify-content: flex-end;
+}
+
+.right-ul li.nav-item {
+  font-family: Alegreya sans;
+  margin-left: 25px;
+}
+
+/* Estilos para Sección 1 */
+
+.inner-section-one {
+  position: relative;
+  background-image: url(../Images/Images-background/HERO\ WEB.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.title-for-section-one {
+  position: absolute;
+  top: 30%; /* Ajusta la posición vertical del título */
+  left: 10%;
+  transform: translate(0, -50%);
+}
+
+.for-button {
+  position: absolute;
+  top: 45%; /* Ajusta la posición vertical del botón */
+  left: 9%;
+  transform: translate(0, -50%);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Estilos para el botón personalizado */
+#custom-button {
+  background-color: #36ace2; 
+  border-color: #36ace2; 
+  font-family: Aeonik;
+  font-size: large;
+  font-weight: bold;
+}
+
+.section-one-footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #36ace2;
+  padding: 20px;
+  padding-left: 50px;
+  color: #ffffff;
+  text-align: justify;
+}
+
+/* Estilos para Sección 2*/
+.insurance-section {
+  background-color: #dfe0de;
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+
+.inner-section2{
+  padding-left: 50px;
+}
+
+/* Estilos para la sección de tarjetas*/
+.project-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* Cambiar a 4 columnas */
+  grid-template-rows: auto auto; /* Mantener 2 filas */
+  grid-gap: 20px;
+  align-items: flex-start;
+}
+
+.project-cards-container {
+  list-style: none;
+  padding: 0px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* Cambiar a 4 columnas */
+  grid-gap: 20px;
+}
+
+.project-cards-container li {
+  width: 100%;
+}
+
+.project-card {
+  background-color: #f0f0f0;
+  padding: 25px;
+  border-radius: 10px; /* Borde redondo para las tarjetas */
+  overflow: hidden; /* Ocultar contenido que exceda el borde redondo */
+}
+.container-padre {
+  background-color: #dfe0de;
+  display: flex;
+  padding-bottom: 25px;
+}
+
+.for-button-asesoria {
+  padding-left: 520px;
+  display: flex;
+  align-items: center;
+}
+.card-text {
+  font-size: large;
+  text-align: center;
+  color: #36ace2;
+  font-weight: bold;
+}
+
+
+/* Estilos para Sección 3 */
+.section-three {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.inner-section-three {
+  flex: 1;
+}
+
+.content-section {
+  flex: 2;
+  padding-left: 20px; /* Ajusta el espacio entre la imagen y el título */
+}
+
+.img-photo-for-section-trhee {
+  max-width: 100%; /* Cambia el valor para ensanchar o reducir la imagen */
+  height: auto;
+}
+
+.title-for-section-three {
+  text-align: justify;
+  font-size: large;
+  padding-left: 200px;
+}
+
+/* Estilos para seccion 4*/
+
+.secction-four{
+  padding-top: 20px;
+  background-color: #dfe0de ;
+}
+
+.section-five{
+  background-color: #000000;
+}
+/* Estilos para seccion 6*/
+
+
+.section-six {
+  background-color: #dfe0de;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.for-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.for-form {
+  flex: 1;
+
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 50%;
+  padding: 6px; /* Ajusta el valor del padding para controlar el tamaño de los inputs */
+  margin-bottom: 10px; /* Ajusta el valor del margin para controlar el espacio entre los inputs */
+}
+
+/* Estilos para la sección 7*/
+/* Estilos para la sección */
+.section-seven {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Estilos para la imagen */
+.img-photo-for-section-seven {
+  width: 80px; /* Tamaño más pequeño */
+}
+
+/* Estilos para el contenedor de la lista izquierda (ul-left) */
+.left-ul-footer {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos para el contenedor de la lista derecha (ul-right) */
+.right-ul-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Estilos para la lista no ordenada (ul) */
+.right-ul-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Estilos para cada ítem de la lista (li) */
+.right-ul-footer li {
+  margin-bottom: 10px;
+  display: flex; /* Mostrar ítems en una fila */
+  align-items: center; /* Alinear ítems verticalmente */
+}
+
+/* Estilos para las imágenes dentro de los ítems de la lista */
+.right-ul-footer li img {
+  width: 20px; /* Tamaño más pequeño */
+  margin-right: 5px;
+}
+
+/* Media queries para hacer la página responsive 
+
+/* Para pantallas pequeñas 
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  nav li {
+    font-size: large;
+    padding-left: 5px;
+    margin: 0 5px;
+  }
+
+  .inner-section2{
+    padding-left: 50px;
+  }
+
+  .project-section {
+    grid-template-columns: 1fr;
+  }
+
+  .project-cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-section {
+    padding: 20px;
+  }
+}
+
+/* Para pantallas muy pequeñas
+@media screen and (max-width: 480px) {
+  nav li {
+    font-size: medium;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .inner-section2{
+    padding-left: 20px;
+  }
+
+  .project-section {
+    grid-template-columns: 1fr;
+  }
+
+  .project-cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Codigos paletas de colores
+1b305d
+1b4887
+247fc3
+36ace2
+Textos
+Aeonik Institutcional
+Alegreya sans Titulares */
