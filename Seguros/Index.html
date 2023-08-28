@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cruz e hijos</title>
+    <link rel="stylesheet" href="JS/animating.js">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="JS/Form.js">
     <link rel="stylesheet" type="text/css" href="Styles/IndexStyles.css">
     <link rel="stylesheet" href="JS/IndexJS.js">
@@ -19,9 +22,9 @@
       </div>
       <div class="right-ul">
         <ul>
-          <li class="nav-item"><a href="#inicio">Productos</a></li>
-          <li class="nav-item"><a href="#seguros">Quienes somos</a></li>
-          <li class="nav-item"><a href="">Contacto</a></li>
+          <li class="nav-item"><a href="#servicios">Productos</a></li>
+          <li class="nav-item"><a href="#conocenos">Quienes somos</a></li>
+          <li class="nav-item"><a href="https://wa.me/+542615350978/?text=Hola! Me gustaría ser asesorado, mi nombre es: ">Contacto</a></li>
         </ul>
       </div>
     </nav>
@@ -29,13 +32,13 @@
 
 
 <!-- Sección 1 -->
-  <section class="section-one">
+  <section class="section-one" id="section1">
   <div class="inner-section-one">
     <h1 class="title-for-section-one">Cuidarte de cualquier riesgo <br>
       nunca fue tan simple
     </h1>
     <div class="for-button">
-      <button type="button" id="custom-button" class="btn btn-primary">Conoce nuestros servicios</button>
+      <a href="https://wa.me/+542615350978/?text=Hola! Me gustaría ser asesorado, mi nombre es: "><button type="button" id="custom-button" class="btn btn-primary">Conoce nuestros servicios</button></a>
     </div>
   </div>
 
@@ -50,10 +53,10 @@
 
 
   <!-- Sección 2 -->
-  <section class="insurance-section">
+  <section class="insurance-section" id="section2">
         <div class="inner-section2">
-          <h2 class="">Servicios</h2>
-          <h3>Asesoramiento para prevenir riesgos</h3>
+          <h2 class="title-section-two" id="servicios">Servicios</h2>
+          <h3 class="title-section-two">Asesoramiento para prevenir riesgos</h3>
           <section class="project-section">
           <ul class="project-cards-container">
             <li>
@@ -143,14 +146,14 @@
   <div class="container-padre">
     <div class="for-button-asesoria">
       <div class="for-button-two">
-        <button type="button" id="custom-button" class="btn btn-primary">Solicitá asesoría</button>
+        <button type="button" id="custom-button" class="btn btn-primary"><a href="https://wa.me/+542615350978/?text=Hola! Me gustaría ser asesorado, mi nombre es: " class="section-two-asesoramiento">Solicita asesoramiento</a></button>
       </div>
     </div>
   </div>
 
   <!--Secion 3-->
 
-  <section class="section-three">
+  <section class="section-three" id="section3">
     <div class="inner-section-three">
         <img src="Images/Images-background/IMAGEN WEB.jpg" alt="familia" class="img-photo-for-section-three">
     </div>
@@ -168,7 +171,7 @@
 </section>
 
 <!--Seccion 4-->
-<section class="secction-four">
+<section class="secction-four" id="section4">
   <div class="inner-section2">
     <h2 class="">Compañías de seguros representadas</h2>
     <section class="project-section">
@@ -177,8 +180,6 @@
         <div class="card" style="width: 18rem;">
           <div class="card" style="width: 18rem;">
             <img src="Images/Companias/ALLIANZ.png" class="card-img-top" alt="...">
-            <div class="card-body">
-            </div>
           </div>
         </div>
       </li>
@@ -186,8 +187,6 @@
         <div class="card" style="width: 18rem;">
           <div class="card" style="width: 18rem;">
             <img src="Images/Companias/FPS.png" class="card-img-top" alt="...">
-            <div class="card-body">
-            </div>
           </div>
         </div>
       </li>
@@ -195,8 +194,6 @@
         <div class="card" style="width: 18rem;">
           <div class="card" style="width: 18rem;">
             <img src="Images/Companias/Seguros rivadavia.png" class="card-img-top" alt="...">
-            <div class="card-body">
-            </div>
           </div>
         </div>
       </li>
@@ -204,8 +201,6 @@
         <div class="card" style="width: 18rem;">
           <div class="card" style="width: 18rem;">
             <img src="Images/Companias/ZURICH.png" class="card-img-top" alt="...">
-            <div class="card-body">
-            </div>
           </div>
         </div>
       </li>
@@ -215,21 +210,16 @@
 
   <!--Seccion 5-->
 
-  <Section class="section-five">
+  <Section class="section-five" id="section5">
 
     <div class="inner-section2">
-      <h2 class="">Conocenos</h2>
+      <h2 class="" id="conocenos">Conocenos</h2>
       <h3>Nuestros productores</h3>
     <section class="project-section">
       <ul class="project-cards-container">
         <li>
           <div class="card" style="width: 18rem;">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">AUTOS</p>
-              </div>
-            </div>
+            <img src="Images/Companias/ALLIANZ.png" class="card-img-top" alt="...">
           </div>
         </li>
         <li>
@@ -272,26 +262,34 @@
   </section> -->
 
   <!--Secciion 7-->
-    <section class="section-seven">
-      <div class="section-seven-footer">
-        <div class="left-ul-footer">
-          <img src="Images/Footers/MARCA FOOTER.svg" alt="Logo" class="img-photo-for-section-seven">
-        </div>
-        <div class="right-ul-footer">
-        <ul>
+  <section class="section-seven" id="section7">
+    <div class="section-seven-footer">
+      <img src="Images/Footers/MARCA%20FOOTER.svg" alt="Logo" class="logo-img">
+      <div class="footer-ul-container">
+        <ul class="left-ul-footer">
           <li>Nuestra oficina</li>
-          <li><img src="Images/Footers/ICON Ubicacion.svg" alt="Ubicacion">Damian Hudson 615 <br> Mendoza</li>
+          <li><img src="Images/Footers/ICON%20Ubicacion.svg" alt="Ubicacion" class="img-redes">Damian Hudson 615 Mendoza</li>
           <li>Nuestros horarios de atencion</li>
-          <li><img src="Images/Footers/ICON Horario.svg" alt="Horarios">presencial de 9hs a 14hs</li>
-          <li>virtual de 9hs a 18hs</li>
-          <li>Nuestras redes:</li>
-          <li><img src="Images/Footers/ICON facebook.svg" alt="facebook"> <img src="Images/Footers/Icon Instagram.svg" alt="Instragram"> <img src="Images/Footers/ICON whatsapp.svg" alt="whatsapp"></li>
+          <li><img src="Images/Footers/ICON%20Horario.svg" alt="Horarios" class="img-redes">Presencial de 9hs a 14hs</li>
+          <li>Virtual de 9hs a 18hs</li>
+          <li >Nuestras redes:</li>
+          <li class="social-icons">
+            <a href="https://www.facebook.com/cruzehijos" class="social-links-for-fb">
+              <img src="Images/Footers/ICON%20facebook.svg" alt="facebook" >
+            </a>
+            <a href="https://www.instagram.com/cruzehijos.consultora/" class="social-links-for-ig">
+              <img src="Images/Footers/Icon%20Instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://wa.me/+542615350978/?text=urlencodedtext" class="social-links-for-wpp">
+              <img src="Images/Footers/ICON%20whatsapp.svg" alt="WhatsApp">
+            </a>
+          </li>
         </ul>
-        </div>
       </div>
-    </section>
-
-
+    </div>
+  </section>
+    <script src="JS/animation2.js"></script>
+    <script src="JS/animating.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
     <script src="JS/IndexJS.js"></script>

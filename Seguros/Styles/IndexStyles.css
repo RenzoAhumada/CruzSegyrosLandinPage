@@ -2,13 +2,22 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+h2{
+  font-family: 'Alegreya Sans', sans-serif;
+}
+h3{
+  font-family: 'Alegreya Sans', sans-serif;
+}
+p{
+  font-family: 'Alegreya Sans', sans-serif;
 }
 
-
-/* Estilos nab var */
 li {
   list-style: none;
 }
+
 
 header {
   background-color: #ffffff;
@@ -22,6 +31,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #1b4887;
 }
 
 
@@ -34,7 +44,8 @@ nav ul {
 
 nav li {
   font-size: x-large;
-
+  font-family: 'Alegreya Sans', sans-serif;
+  
 }
 
 nav a {
@@ -65,7 +76,6 @@ nav a {
 }
 
 .right-ul li.nav-item {
-  font-family: Alegreya sans;
   margin-left: 25px;
 }
 
@@ -85,6 +95,9 @@ nav a {
   top: 30%; /* Ajusta la posición vertical del título */
   left: 10%;
   transform: translate(0, -50%);
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: bold;
+  color: #1b4887;
 }
 
 .for-button {
@@ -97,8 +110,21 @@ nav a {
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
+  font-family: 'Alegreya Sans', sans-serif;
 }
 
+.section-one-footer{
+  background-color: #36ace2;
+  padding-left: 9%;
+  align-items: center;
+  text-align: justify;
+  font-weight: bold;
+  color:#ffffff;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+.section-one-footer h3{
+  background-color: #36ace2;
+}
 /* Estilos para el botón personalizado */
 #custom-button {
   background-color: #36ace2; 
@@ -106,18 +132,9 @@ nav a {
   font-family: Aeonik;
   font-size: large;
   font-weight: bold;
+  font-family: 'Alegreya Sans', sans-serif;
 }
 
-.section-one-footer {
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #36ace2;
-  padding: 20px;
-  padding-left: 50px;
-  color: #ffffff;
-  text-align: justify;
-}
 
 /* Estilos para Sección 2*/
 .insurance-section {
@@ -125,18 +142,25 @@ nav a {
   padding: 10px;
   display: flex;
   align-items: flex-start;
+  color: #1b305d;
 }
 
 
 .inner-section2{
   padding-left: 50px;
+  color: #1b305d;
 }
+.title-section-two{
+  color: #1b305d;
+  font-weight:1000;
+}
+
 
 /* Estilos para la sección de tarjetas*/
 .project-section {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; /* Cambiar a 4 columnas */
-  grid-template-rows: auto auto; /* Mantener 2 filas */
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: auto auto;
   grid-gap: 20px;
   align-items: flex-start;
 }
@@ -146,7 +170,7 @@ nav a {
   padding: 0px;
   margin: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; /* Cambiar a 4 columnas */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
 }
 
@@ -156,9 +180,9 @@ nav a {
 
 .project-card {
   background-color: #f0f0f0;
-  padding: 25px;
-  border-radius: 10px; /* Borde redondo para las tarjetas */
-  overflow: hidden; /* Ocultar contenido que exceda el borde redondo */
+  padding: 20px;
+  border-radius: 20px; 
+  overflow: hidden; 
 }
 .container-padre {
   background-color: #dfe0de;
@@ -171,14 +195,21 @@ nav a {
   display: flex;
   align-items: center;
 }
-.card-text {
-  font-size: large;
-  text-align: center;
+.card-text{
+  font-family: 'Alegreya Sans', sans-serif;
   color: #36ace2;
+  text-align: center;
+  font-size: x-large;
   font-weight: bold;
 }
+.section-two-asesoramiento {
+  text-decoration: none; /* Eliminar subrayado */
+  color: #ffffff; /* Cambiar color del enlace */
+}
 
-
+.section-two-asesoramiento:hover {
+  color: #ffffff; /* Cambiar color en el hover */
+}
 /* Estilos para Sección 3 */
 .section-three {
   display: flex;
@@ -192,18 +223,19 @@ nav a {
 
 .content-section {
   flex: 2;
-  padding-left: 20px; /* Ajusta el espacio entre la imagen y el título */
+  padding-left: 10px; /* Ajusta el espacio entre la imagen y el título */
 }
 
-.img-photo-for-section-trhee {
-  max-width: 100%; /* Cambia el valor para ensanchar o reducir la imagen */
-  height: auto;
+.img-photo-for-section-three { /* Corregido el nombre de la clase */
+  max-width: 100%;
+  height: auto; /* Cambiado a 'auto' para mantener la proporción */
 }
 
 .title-for-section-three {
   text-align: justify;
   font-size: large;
-  padding-left: 200px;
+  padding-left: 25px;
+  font-family: 'Alegreya Sans', sans-serif;
 }
 
 /* Estilos para seccion 4*/
@@ -213,122 +245,161 @@ nav a {
   background-color: #dfe0de ;
 }
 
-.section-five{
-  background-color: #000000;
-}
-/* Estilos para seccion 6*/
-
-
-.section-six {
-  background-color: #dfe0de;
+/* Estilos para seccion 7*/
+.section-seven-footer {
+  background-color: #36ace2;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.for-text {
-  flex: 1;
-  padding-right: 20px;
-}
-
-.for-form {
-  flex: 1;
-
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-input, textarea {
-  width: 50%;
-  padding: 6px; /* Ajusta el valor del padding para controlar el tamaño de los inputs */
-  margin-bottom: 10px; /* Ajusta el valor del margin para controlar el espacio entre los inputs */
-}
-
-/* Estilos para la sección 7*/
-/* Estilos para la sección */
-.section-seven {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
-
-/* Estilos para la imagen */
-.img-photo-for-section-seven {
-  width: 80px; /* Tamaño más pequeño */
-}
-
-/* Estilos para el contenedor de la lista izquierda (ul-left) */
-.left-ul-footer {
-  display: flex;
-  align-items: center;
-}
-
-/* Estilos para el contenedor de la lista derecha (ul-right) */
-.right-ul-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-/* Estilos para la lista no ordenada (ul) */
-.right-ul-footer ul {
+.left-ul-footer{
   list-style: none;
   padding: 0;
-  margin: 0;
+  text-align: center;
+}
+
+.footer-ul-container {
   display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column; 
+}
+
+.left-ul-footer {
+  font-family: 'Alegreya Sans', sans-serif;
+  display: flex;
+  color: #ffffff;
+  font-size: large;
+  font-weight: bold;
+  flex-direction: column; 
+  align-items: flex-start; 
+  padding-left: 200px;
+  padding-top: 35px;
+}
+
+.right-ul-footer {
+  font-family: 'Alegreya Sans', sans-serif;
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+}
+
+
+.logo-img {
+  max-width: 400px;
+  height: auto;
+  display: block;
+  padding-left: 100px;
+}
+
+.right-ul-footer img,
+.left-ul-footer img {
+  max-width: 40px;
+  height: auto;
+  margin: 2px;
+}
+.left-ul-footer li {
+  align-items: center;
+}
+
+
+
+
+/*Index for mobile*/
+
+/* Estilos para la hamburguesa y el menú desplegable en dispositivos móviles
+#hamburger {
+  display: none;
   flex-direction: column;
-  align-items: flex-end;
+  cursor: pointer;
+  font-size: 24px;
 }
 
-/* Estilos para cada ítem de la lista (li) */
-.right-ul-footer li {
-  margin-bottom: 10px;
-  display: flex; /* Mostrar ítems en una fila */
-  align-items: center; /* Alinear ítems verticalmente */
-}
+#hamburger div {
+  width: 30px;
+  height: 3px;
+  background-color: #1b305d;
+  margin: 3px 0;
+}*/
 
-/* Estilos para las imágenes dentro de los ítems de la lista */
-.right-ul-footer li img {
-  width: 20px; /* Tamaño más pequeño */
-  margin-right: 5px;
-}
+
 
 /* Media queries para hacer la página responsive 
 
-/* Para pantallas pequeñas 
-@media screen and (max-width: 768px) {
-  header {
-    padding: 10px;
+/* Para pantallas pequeñas*/
+body {
+  font-size: 16px; /* Tamaño de fuente base para pantallas medianas/grandes */
+}
+
+
+/* Ajustes generales para pantallas medianas */
+@media (max-width: 1020px) {
+  /* Ajusta el tamaño de fuente base para pantallas medianas */
+  body {
+    font-size: 15px;
   }
 
-  nav li {
-    font-size: large;
-    padding-left: 5px;
-    margin: 0 5px;
-  }
-
-  .inner-section2{
-    padding-left: 50px;
-  }
-
-  .project-section {
-    grid-template-columns: 1fr;
-  }
-
+  /* Ajustes para la sección de tarjetas en pantallas medianas */
   .project-cards-container {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-section {
-    padding: 20px;
+    grid-template-columns: 1fr 1fr 1fr; /* Muestra tres tarjetas por fila */
   }
 }
 
-/* Para pantallas muy pequeñas
+
+/* Ajustes generales para pantallas pequeñas */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Reduce el tamaño de fuente en dispositivos pequeños */
+  }
+
+  /* Ajusta el espaciado de la navegación en dispositivos pequeños */
+  nav ul {
+    margin-top: 10px;
+  }
+
+  /* Ajusta los márgenes y tamaños de las tarjetas en dispositivos pequeños */
+  .project-cards-container {
+    grid-template-columns: 1fr 1fr; /* Muestra dos tarjetas por fila */
+  }
+
+  .card {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin: 10px 0;
+  }
+
+  /* Ajustes para la sección de las imágenes */
+  .section-three {
+    flex-direction: column; /* Cambia el orden en dispositivos pequeños */
+    align-items: center;
+  }
+
+  .inner-section-three,
+  .content-section {
+    padding: 0; /* Elimina el espacio en los lados en dispositivos pequeños */
+  }
+
+  /* Ajustes para la sección del footer */
+  .left-ul-footer,
+  .right-ul-footer {
+    padding-left: 0; /* Elimina el padding izquierdo en dispositivos pequeños */
+    text-align: center;
+  }
+
+  .logo-img {
+    max-width: 200px; /* Reduce el tamaño del logo en dispositivos pequeños */
+    padding-left: 0;
+  }
+
+  .right-ul-footer img,
+  .left-ul-footer img {
+    max-width: 30px; /* Reduce el tamaño de los íconos en dispositivos pequeños */
+  }
+}
+
+
+/* Para pantallas muy pequeñas*/
 @media screen and (max-width: 480px) {
   nav li {
     font-size: medium;
