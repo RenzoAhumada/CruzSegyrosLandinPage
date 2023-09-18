@@ -4,13 +4,7 @@ body {
   padding: 0;
   font-family: 'Alegreya Sans', sans-serif;
 }
-h2{
-  font-family: 'Alegreya Sans', sans-serif;
-}
-h3{
-  font-family: 'Alegreya Sans', sans-serif;
-}
-p{
+h2, h3, p {
   font-family: 'Alegreya Sans', sans-serif;
 }
 
@@ -43,7 +37,7 @@ nav ul {
 }
 
 nav li {
-  font-size: x-large;
+  font-size: large;
   font-family: 'Alegreya Sans', sans-serif;
   
 }
@@ -75,7 +69,10 @@ nav a {
   justify-content: flex-end;
 }
 
-.right-ul li.nav-item {
+.right-ul{
+  margin-left: 25px;
+}
+.nav-item {
   margin-left: 25px;
 }
 
@@ -152,25 +149,18 @@ nav a {
 }
 .title-section-two{
   color: #1b305d;
-  font-weight:1000;
 }
 
 
 /* Estilos para la sección de tarjetas*/
-.project-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; 
-  grid-template-rows: auto auto;
-  grid-gap: 20px;
-  align-items: flex-start;
-}
+
 
 .project-cards-container {
   list-style: none;
-  padding: 0px;
+  padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr); /* Cambia a 4 columnas */
   grid-gap: 20px;
 }
 
@@ -178,38 +168,45 @@ nav a {
   width: 100%;
 }
 
-.project-card {
-  background-color: #f0f0f0;
-  padding: 20px;
-  border-radius: 20px; 
-  overflow: hidden; 
+.card {
+  width: 100%;
+  max-width: 18rem;
+  margin: 0 auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-body {
+  text-align: center;
+}
+
 .container-padre {
   background-color: #dfe0de;
   display: flex;
+  flex-direction: column; /* Cambia a dirección de columna */
+  align-items: center; /* Centra el contenido horizontalmente */
   padding-bottom: 25px;
 }
 
-.for-button-asesoria {
-  padding-left: 520px;
-  display: flex;
-  align-items: center;
-}
-.card-text{
-  font-family: 'Alegreya Sans', sans-serif;
-  color: #36ace2;
+.button-container {
   text-align: center;
-  font-size: x-large;
-  font-weight: bold;
+  margin-top: auto; 
 }
+
 .section-two-asesoramiento {
-  text-decoration: none; /* Eliminar subrayado */
-  color: #ffffff; /* Cambiar color del enlace */
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .section-two-asesoramiento:hover {
-  color: #ffffff; /* Cambiar color en el hover */
+  color: #ffffff;
 }
+
 /* Estilos para Sección 3 */
 .section-three {
   display: flex;
@@ -223,12 +220,12 @@ nav a {
 
 .content-section {
   flex: 2;
-  padding-left: 10px; /* Ajusta el espacio entre la imagen y el título */
+  padding-left: 10px; 
 }
 
-.img-photo-for-section-three { /* Corregido el nombre de la clase */
+.img-photo-for-section-three { 
   max-width: 100%;
-  height: auto; /* Cambiado a 'auto' para mantener la proporción */
+  height: auto; 
 }
 
 .title-for-section-three {
@@ -236,15 +233,80 @@ nav a {
   font-size: large;
   padding-left: 25px;
   font-family: 'Alegreya Sans', sans-serif;
+  font-size: medium;
+  font-weight: bold;
 }
-
 /* Estilos para seccion 4*/
-
 .secction-four{
   padding-top: 20px;
   background-color: #dfe0de ;
 }
 
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  align-items: flex-start; 
+  padding-left: 10px;
+}
+
+.gallery {
+  list-style: none;
+  padding: 0px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.gallery li {
+  flex: 0 0 calc(25% - 10px);
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.gallery li:nth-last-child(1) {
+  grid-column: 2 / 3;
+}
+.card-texT-productores{
+  text-align: center;
+  font-size: small;
+  font-weight: bold;
+}
+/* Estilos para seccion 6*/
+
+#contact-form {
+  padding-top: 20px;
+  max-width: 400px; 
+  margin: 0 auto; 
+}
+
+label {
+  display: block; 
+  margin-bottom: 8px; 
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px; 
+  margin-bottom: 20px; 
+  border: 2px solid #ccc; 
+  border-radius: 10px; 
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+#custom-button {
+  background-color: #36ace2;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Alegreya Sans', sans-serif;
+  cursor: pointer;
+}
 /* Estilos para seccion 7*/
 .section-seven-footer {
   background-color: #36ace2;
@@ -288,7 +350,7 @@ nav a {
 
 
 .logo-img {
-  max-width: 400px;
+  max-width: 275px;
   height: auto;
   display: block;
   padding-left: 100px;
@@ -303,121 +365,212 @@ nav a {
 .left-ul-footer li {
   align-items: center;
 }
-
-
-
-
-/*Index for mobile*/
-
-/* Estilos para la hamburguesa y el menú desplegable en dispositivos móviles
-#hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  font-size: 24px;
-}
-
-#hamburger div {
-  width: 30px;
-  height: 3px;
-  background-color: #1b305d;
-  margin: 3px 0;
-}*/
-
-
-
-/* Media queries para hacer la página responsive 
-
-/* Para pantallas pequeñas*/
-body {
-  font-size: 16px; /* Tamaño de fuente base para pantallas medianas/grandes */
-}
-
-
-/* Ajustes generales para pantallas medianas */
-@media (max-width: 1020px) {
-  /* Ajusta el tamaño de fuente base para pantallas medianas */
-  body {
-    font-size: 15px;
+@media (max-width: 1200px) {
+  /* Estilos para Sección 1 en dispositivos móviles */
+  .nav li {
+    font-size: small;
+  }
+  .nav-img img {
+    width: 75px;
+    height: auto;
+    text-align: left;
   }
 
-  /* Ajustes para la sección de tarjetas en pantallas medianas */
+  .left-ul{
+    max-width: 100%;
+  }
+  .right-ul{
+    max-width: 100%;
+  }
+  .inner-section-one {
+    position: relative;
+    background-image: url(../Images/Familia.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .title-for-section-one {
+    font-size: 24px;
+    font-weight: bold;
+    top: 20%;
+    left: 5%;
+    color: #ffffff;
+  }
+
+  .for-button {
+    top: 35%;
+    left: 5%;
+  }
+
+  /* Estilos para Sección 2 en dispositivos móviles */
+  .inner-section2 {
+    padding-left: 10px;
+  }
+
+  .title-section-two {
+    font-size: 24px;
+    font-weight: bold;
+  }
   .project-cards-container {
-    grid-template-columns: 1fr 1fr 1fr; /* Muestra tres tarjetas por fila */
-  }
-}
-
-
-/* Ajustes generales para pantallas pequeñas */
-@media (max-width: 768px) {
-  body {
-    font-size: 14px; /* Reduce el tamaño de fuente en dispositivos pequeños */
+    grid-template-columns: 1fr 1fr;
   }
 
-  /* Ajusta el espaciado de la navegación en dispositivos pequeños */
-  nav ul {
-    margin-top: 10px;
-  }
-
-  /* Ajusta los márgenes y tamaños de las tarjetas en dispositivos pequeños */
-  .project-cards-container {
-    grid-template-columns: 1fr 1fr; /* Muestra dos tarjetas por fila */
-  }
-
-  .card {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    margin: 10px 0;
-  }
-
-  /* Ajustes para la sección de las imágenes */
-  .section-three {
-    flex-direction: column; /* Cambia el orden en dispositivos pequeños */
+  .for-button-asesoria {
+    padding-left: 10%;
+    display: flex;
     align-items: center;
   }
 
-  .inner-section-three,
-  .content-section {
-    padding: 0; /* Elimina el espacio en los lados en dispositivos pequeños */
+
+  /* Estilos para Sección 3 en dispositivos móviles */
+  .title-for-section-three {
+    font-size: 18px;
+    padding-left: 10px;
   }
 
-  /* Ajustes para la sección del footer */
-  .left-ul-footer,
-  .right-ul-footer {
-    padding-left: 0; /* Elimina el padding izquierdo en dispositivos pequeños */
-    text-align: center;
-  }
-
-  .logo-img {
-    max-width: 200px; /* Reduce el tamaño del logo en dispositivos pequeños */
-    padding-left: 0;
-  }
-
-  .right-ul-footer img,
-  .left-ul-footer img {
-    max-width: 30px; /* Reduce el tamaño de los íconos en dispositivos pequeños */
-  }
-}
-
-
-/* Para pantallas muy pequeñas*/
-@media screen and (max-width: 480px) {
-  nav li {
-    font-size: medium;
-    padding-left: 0;
-    margin: 0;
-  }
-
-  .inner-section2{
-    padding-left: 20px;
-  }
-
-  .project-section {
+  /* Estilos para seccion 4 en dispositivos móviles */
+  .gallery {
     grid-template-columns: 1fr;
   }
+  #contact-form {
+    padding-top: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
 
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: 'Arial', sans-serif;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-family: 'Alegreya Sans', sans-serif;
+  }
+
+  /* Estilos para el botón personalizado en dispositivos móviles */
+  #custom-button {
+    background-color: #36ace2;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Alegreya Sans', sans-serif;
+    cursor: pointer;
+    padding: 10px 20px 20px; /* Espacio adicional en la parte inferior */
+  }
+
+  /* Estilos para seccion 7 en dispositivos móviles */
+  .left-ul-footer {
+    padding-left: 10px;
+    padding-top: 15px;
+  }
+
+}
+@media (max-width: 768px) {
+  .inner-section-one {
+    position: relative;
+    background-image: url(../Images/Familia.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  .nav-img img {
+    width: 75px;
+    height: auto;
+    text-align: left;
+  }
+  .title-for-section-one {
+    font-size: 24px;
+    font-weight: bold;
+    top: 20%;
+    left: 5%;
+    color: #ffffff;
+  }
+
+  .for-button {
+    top: 35%;
+    left: 5%;
+  }
+
+  /* Estilos para Sección 2 en dispositivos móviles */
+  .inner-section2 {
+    padding-left: 10px;
+  }
+
+  .title-section-two {
+    font-size: 24px;
+    font-weight: bold;
+  }
   .project-cards-container {
     grid-template-columns: 1fr;
   }
+
+  .for-button-asesoria {
+    display: flex;
+    align-items: center;
+  }
+
+
+  /* Estilos para Sección 3 en dispositivos móviles */
+  .title-for-section-three {
+    font-size: 18px;
+    padding-left: 10px;
+  }
+
+  /* Estilos para seccion 4 en dispositivos móviles */
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+   /* Estilos para seccion 6 en dispositivos móviles */
+   #contact-form {
+    padding-top: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: 'Arial', sans-serif;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-family: 'Alegreya Sans', sans-serif;
+  }
+
+  /* Estilos para el botón personalizado en dispositivos móviles */
+  #custom-button {
+    background-color: #36ace2;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Alegreya Sans', sans-serif;
+    cursor: pointer;
+    padding: 10px 20px 20px; /* Espacio adicional en la parte inferior */
+  }
+  /*Estilos para seccion 7 en dispositivos móviles */
+  .left-ul-footer {
+    padding-left: 10px;
+    padding-top: 15px;
+  }
+  
 }
 
 /* Codigos paletas de colores
