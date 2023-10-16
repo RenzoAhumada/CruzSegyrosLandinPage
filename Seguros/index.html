@@ -1,4 +1,5 @@
- <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -10,7 +11,11 @@
     <link rel="stylesheet" type="text/css" href="Styles/IndexStyles.css">
     <link rel="stylesheet" href="JS/IndexJS.js">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  </head>
 <body>
   <!--Seccion nab var -->
   <header class="header-section">
@@ -24,7 +29,7 @@
         <ul>
           <li class="nav-item"><a href="#servicios">Productos</a></li>
           <li class="nav-item"><a href="#conocenos">Quienes somos</a></li>
-          <li class="nav-item"><a href="https://wa.me/+542615349710/?text=Hola! Me gustaría ser asesorado, mi nombre es: ">Contacto</a></li>
+          <li class="nav-item"><a href="#form-id">Contacto</a></li>
         </ul>
       </div>
     </nav>
@@ -35,19 +40,19 @@
   <section class="section-one" id="section1">
   <div class="inner-section-one">
     <h1 class="title-for-section-one">Cuidarte de cualquier riesgo <br>
-      nunca fue tan simple
+      nunca fue tan <span class="highlighted-text">simple.</span>
     </h1>
     <div class="for-button">
-      <a href="https://wa.me/+542615349710/?text=Hola! Me gustaría ser asesorado, mi nombre es: "><button type="button" id="custom-button" class="btn btn-primary">Conoce nuestros servicios</button></a>
+      <a href="#servicios"><button type="button" id="custom-button" class="btn btn-primary">Conoce nuestros servicios</button></a>
     </div>
   </div>
 
   <div class="section-one-footer">
-    <h2>Somos una empresa familiar <br>
-    y sabemos lo que te preocupa hoy.</h2>
-    <h3>
-      Desde 2016 brindamos tranquilidad.
-    </h3>
+    <img src="Images/Footers/ICON FAMILIA.png" alt="">
+    <div class="text-container">
+      <h2>Somos una empresa familiar <br> y sabemos lo que te preocupa hoy.</h2>
+      <h3>Desde el 2016 brindando tranquilidad.</h3>
+    </div>
   </div>
   </section>
 
@@ -153,17 +158,20 @@
             nuestros productores asesores de seguros, para contratar <br>
             de manera fácil y rápida.
         </h1>
+        <div class="button-for-secction-three">
+        <a href="#form-id"><button type="button" id="custom-button-two" class="btn btn-primary">Asesorate con nosotros</button></a>
+      </div>
     </div>
 </section>
 
 <!--Seccion 4-->
   <section class="secction-four" id="section4">
-      <h2 class="">
+      <h2 class="title-for-secction-four">
         Compañías de seguros representadas
 
       </h2>
     <section class="project-section">
-      <ul class="project-cards-container">
+      <ul class="project-cards-container-four">
         <li>
           <div class="card">
             <img src="Images/Companias/ALLIANZ.png" class="card-img-top" alt="...">
@@ -185,12 +193,12 @@
   <Section class="section-five" id="section5">
 
     <div class="inner-section2">
-        <h2 class="" id="conocenos">Conocenos</h2>
-        <h3>Nuestros productores</h3>
+        <h2 class="title-section-two" id="conocenos">Conocenos</h2>
+        <h3 class="title-section-two">Nuestros productores</h3>
     </div>
     <section class="project-section">
       <div class="gallery-container">
-          <ul class="gallery">
+        <div class="owl-carousel gallery">
             <li>
               <div class="card">
                 <img src="Images/Productores/FOTO 1editada.jpg" class="card-img-top" alt="...">
@@ -294,22 +302,21 @@
                     Matrícula SSN N° 66721 <br>
                     Tel 261-5350978 <br>
                     Me desempeño desde hace 19 años en la actividad aseguradora. 
-                    Le dedico gran parte del día y me siento muy feliz de los 
-                    progresos logrados, la profesión la desarrollo con mucho empeño y vocación de 
-                    servicio, transmitiendo a mis clientes y colegas mis conocimientos.
+                    Dedico gran parte del día y me siento muy feliz de los 
+                    progresos logrados, transmitiendo a mis clientes y colegas mis conocimientos.
                    </p>
                 </div>
               </div>
             </li>
-    </ul>
-  </div>
-    </Section>
+      </div>
+    </div>
+  </Section>
 </section>
 
   <!--Seccion 6-->
   <section class="seccion-six">
 
-  <div class="for-form">
+  <div class="for-form" id="form-id">
     <form id="contact-form" method="post" action="procesar_formulario.php">
         <label for="nombre">Nombre y Apellido:</label>
         <input type="text" id="nombre" name="nombre" required>
@@ -358,7 +365,10 @@
       </div>
     </div>
   </section>
-  <script src="JS/tarjetas.js"></script>
+    <script src="JS/Carrousel.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> 
+    <script src="JS/tarjetas.js"></script>
     <script src="JS/animation2.js"></script>
     <script src="JS/animating.js"></script>
     <script src="JS/IndexJS.js"></script>

@@ -8,17 +8,17 @@ h2, h3, p {
   font-family: 'Alegreya Sans', sans-serif;
 }
 
+/* Estilos nav-bar */
 li {
   list-style: none;
 }
-
 
 header {
   background-color: #ffffff;
   color: #000000;
   text-align: center;
   padding: 20px;
-  border-bottom: 1px solid #000000;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -97,6 +97,10 @@ nav a {
   color: #1b4887;
 }
 
+.highlighted-text {
+  color: #36ace2;
+}
+
 .for-button {
   position: absolute;
   top: 45%; /* Ajusta la posición vertical del botón */
@@ -109,24 +113,44 @@ nav a {
   cursor: pointer;
   font-family: 'Alegreya Sans', sans-serif;
 }
-
-.section-one-footer{
-  background-color: #36ace2;
+.section-one-footer {
+  background-image: linear-gradient(to right, #0282D0, #1794DE, #1592DD, #36ace2);
   padding-left: 9%;
   align-items: center;
   text-align: justify;
-  font-weight: bold;
-  color:#ffffff;
+  color: #ffffff;
   font-family: 'Alegreya Sans', sans-serif;
+  display: flex;
+  flex-direction: row;
 }
-.section-one-footer h3{
-  background-color: #36ace2;
+
+.section-one-footer img {
+  max-width: 100%;
+  margin-right: 20px;
 }
-/* Estilos para el botón personalizado */
+
+.text-container {
+  display: flex;
+  flex-direction: column; 
+}
+
+.section-one-footer h2 {
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: justify;
+  margin: 0;
+}
+
+.section-one-footer h3 {
+  text-align: justify;
+  font-size: large;
+  margin: 0;
+}
+
 #custom-button {
   background-color: #36ace2; 
   border-color: #36ace2; 
-  font-family: Aeonik;
+  font-family: 'Alegreya Sans', sans-serif;
   font-size: large;
   font-weight: bold;
   font-family: 'Alegreya Sans', sans-serif;
@@ -135,20 +159,28 @@ nav a {
 
 /* Estilos para Sección 2*/
 .insurance-section {
+  padding-top: 50px;
   background-color: #dfe0de;
-  padding: 10px;
   display: flex;
   align-items: flex-start;
   color: #1b305d;
 }
 
-
 .inner-section2{
   padding-left: 50px;
   color: #1b305d;
+  padding-bottom: 15px;
 }
-.title-section-two{
+
+.title-section-two {
   color: #1b305d;
+  font-size: xx-large; 
+  font-weight: bold; 
+}
+
+.title-section-two + h3 {
+  font-size: large; 
+  font-weight: bold; 
 }
 
 
@@ -184,6 +216,11 @@ nav a {
 .card-body {
   text-align: center;
 }
+.card-text{
+  color: #36ace2;
+  font-size: xx-large;
+  font-weight: bold;
+}
 
 .container-padre {
   background-color: #dfe0de;
@@ -217,30 +254,51 @@ nav a {
 .inner-section-three {
   flex: 1;
 }
-
 .content-section {
   flex: 2;
   padding-left: 10px; 
 }
 
-.img-photo-for-section-three { 
-  max-width: 100%;
-  height: auto; 
-}
-
 .title-for-section-three {
   text-align: justify;
   font-size: large;
-  padding-left: 25px;
   font-family: 'Alegreya Sans', sans-serif;
-  font-size: medium;
+  font-weight: bold;
+}
+.button-for-secction-three{
+  padding-top: 30px;
+  padding-left: 25%;
+}
+#custom-button-two {
+  background-color: #36ace2;
+  border-color: #36ace2;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: large;
   font-weight: bold;
 }
 /* Estilos para seccion 4*/
+
 .secction-four{
-  padding-top: 20px;
+  padding-top: 30px;
   background-color: #dfe0de ;
 }
+.title-for-secction-four{
+  color: #1b305d;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+}
+.project-cards-container-four {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Estilos para seccion 5*/
+
 
 .gallery-container {
   display: flex;
@@ -285,6 +343,8 @@ label {
   display: block; 
   margin-bottom: 8px; 
   font-family: 'Alegreya Sans', sans-serif;
+  font-size: xx-large;
+  font-weight: bold;
 }
 
 input[type="text"],
@@ -309,7 +369,7 @@ textarea {
 }
 /* Estilos para seccion 7*/
 .section-seven-footer {
-  background-color: #36ace2;
+  background-image: linear-gradient(to right, #0282D0, #1794DE, #1592DD, #36ace2);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -353,7 +413,7 @@ textarea {
   max-width: 275px;
   height: auto;
   display: block;
-  padding-left: 100px;
+  padding-left: 25px;
 }
 
 .right-ul-footer img,
@@ -365,119 +425,11 @@ textarea {
 .left-ul-footer li {
   align-items: center;
 }
-@media (max-width: 1200px) {
-  /* Estilos para Sección 1 en dispositivos móviles */
-  .nav li {
-    font-size: small;
-  }
-  .nav-img img {
-    width: 75px;
-    height: auto;
-    text-align: left;
-  }
-
-  .left-ul{
-    max-width: 100%;
-  }
-  .right-ul{
-    max-width: 100%;
-  }
-  .inner-section-one {
-    position: relative;
-    background-image: url(../Images/Familia.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .title-for-section-one {
-    font-size: 24px;
-    font-weight: bold;
-    top: 20%;
-    left: 5%;
-    color: #ffffff;
-  }
-
-  .for-button {
-    top: 35%;
-    left: 5%;
-  }
-
-  /* Estilos para Sección 2 en dispositivos móviles */
-  .inner-section2 {
-    padding-left: 10px;
-  }
-
-  .title-section-two {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  .project-cards-container {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .for-button-asesoria {
-    padding-left: 10%;
-    display: flex;
-    align-items: center;
-  }
-
-
-  /* Estilos para Sección 3 en dispositivos móviles */
-  .title-for-section-three {
-    font-size: 18px;
-    padding-left: 10px;
-  }
-
-  /* Estilos para seccion 4 en dispositivos móviles */
-  .gallery {
-    grid-template-columns: 1fr;
-  }
-  #contact-form {
-    padding-top: 20px;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  label {
-    display: block;
-    margin-bottom: 8px;
-    font-family: 'Arial', sans-serif;
-  }
-
-  input[type="text"],
-  input[type="tel"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    font-family: 'Alegreya Sans', sans-serif;
-  }
-
-  /* Estilos para el botón personalizado en dispositivos móviles */
-  #custom-button {
-    background-color: #36ace2;
-    color: #ffffff;
-    border: none;
-    border-radius: 10px;
-    font-family: 'Alegreya Sans', sans-serif;
-    cursor: pointer;
-    padding: 10px 20px 20px; /* Espacio adicional en la parte inferior */
-  }
-
-  /* Estilos para seccion 7 en dispositivos móviles */
-  .left-ul-footer {
-    padding-left: 10px;
-    padding-top: 15px;
-  }
-
-}
 @media (max-width: 768px) {
+   /* Estilos para Sección 1 en dispositivos móviles */
   .inner-section-one {
     position: relative;
-    background-image: url(../Images/Familia.png);
+    background-image: url(../Images/Images-background/HERO\ mobile.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -493,7 +445,37 @@ textarea {
     font-weight: bold;
     top: 20%;
     left: 5%;
-    color: #ffffff;
+  }
+  .section-one-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+  }
+  
+  .section-one-footer img {
+    max-width: 100%;
+    margin-right: 20px;
+  }
+  
+  .text-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .section-one-footer h2 {
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: justify;
+    margin: 0;
+  }
+  
+  .section-one-footer h3 {
+    text-align: justify;
+    font-size: large;
+    margin: 0;
   }
 
   .for-button {
@@ -507,11 +489,25 @@ textarea {
   }
 
   .title-section-two {
-    font-size: 24px;
+    font-size: xx-large;
+    font-weight: bold;
+  }
+  .inner-section2{
+    padding-left: 30px;
+  }
+  .card {
+    max-width: 10rem;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  .card-text{
+    color: #36ace2;
+    font-size: medium;
     font-weight: bold;
   }
   .project-cards-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .for-button-asesoria {
@@ -521,26 +517,53 @@ textarea {
 
 
   /* Estilos para Sección 3 en dispositivos móviles */
-  .title-for-section-three {
-    font-size: 18px;
+  .section-three {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    flex-direction: column; /* Cambiamos la dirección a column */
+  }
+  .img-photo-for-section-three {
+    width: 100%; /* Hacer la imagen ocupar el 100% del ancho */
+    height: 100%; /* Mantener la proporción de la imagen */
+  }
+  .inner-section-three {
+    flex: 1;
+    padding-bottom: 15px;
+  }
+  .content-section {
+    flex: 2;
     padding-left: 10px;
+  }
+  .title-for-section-three {
+    text-align: justify;
+    font-size: large;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: bold;
+  }
+  
+  .button-for-secction-three {
+    padding-top: 30px;
+    padding-left: 25%;
+    padding-bottom: 25px;
   }
 
   /* Estilos para seccion 4 en dispositivos móviles */
-  .gallery {
-    grid-template-columns: 1fr;
-  }
+
    /* Estilos para seccion 6 en dispositivos móviles */
    #contact-form {
     padding-top: 20px;
     max-width: 100%;
     margin: 0 auto;
   }
-
+  .for-form{
+    padding: 15px;
+  }
   label {
+    padding: 5px;
     display: block;
     margin-bottom: 8px;
-    font-family: 'Arial', sans-serif;
+    font-size: small;
   }
 
   input[type="text"],
@@ -566,8 +589,17 @@ textarea {
     padding: 10px 20px 20px; /* Espacio adicional en la parte inferior */
   }
   /*Estilos para seccion 7 en dispositivos móviles */
+  .section-seven-footer{
+    text-align: justify;
+    font-size: small;
+  }
+  .logo-img {
+    width: 250px; 
+    height: auto; 
+}
+
   .left-ul-footer {
-    padding-left: 10px;
+    padding-left: 5px;
     padding-top: 15px;
   }
   

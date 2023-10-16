@@ -4,8 +4,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $telefono = $_POST["telefono"];
     $email = $_POST["email"];
     $consulta = $_POST["consulta"];
-
-    // Configura el destinatario y el asunto del correo
+    
+    //Configuracion del correo
     $to = "claudiaalecruz@yahoo.com.ar";
     $subject = "Nueva consulta de contacto";
 
